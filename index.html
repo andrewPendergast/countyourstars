@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andrew Pendergast - Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.min.css" />
+	
+	<link rel="stylesheet" href="./static/css/style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script src="./static/js/main.js"></script>
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="form-group">
+							<label for="organization">Organization Name:</label>
+							<input type="text" class="form-control" id="organizationName">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="form-group">
+							<label for="event">Event Name:</label>
+							<input type="text" class="form-control" id="eventName">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section text-center">
+			<h2>Caucasian</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<span id="incrementCaucasianMale" onclick="incrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span id="incrementCaucasianFemale" onclick="incrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<span class="fa-stack fa-3x">
+							<i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+							<strong class="fa-stack-1x icon-text"><span id="quantityCaucasianMale">0</span></strong>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span class="fa-stack fa-3x">
+							<i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+							<strong class="fa-stack-1x icon-text"><span id="quantityCaucasianFemale">0</span></strong>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<span id="decrementCaucasianMale" onclick="decrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span id="decrementCaucasianFemale" onclick="decrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<h3>Male</h3>
+					</div>
+					<div class="col-xs-6">
+						<h3>Female</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section text-center">
+			<h2>Hispanic</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<span id="incrementHispanicMale" onclick="incrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span id="incrementHispanicFemale" onclick="incrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<span class="fa-stack fa-3x">
+							<i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+							<strong class="fa-stack-1x icon-text"><span id="quantityHispanicMale">0</span></strong>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span class="fa-stack fa-3x">
+							<i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+							<strong class="fa-stack-1x icon-text"><span id="quantityHispanicFemale">0</span></strong>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<span id="decrementHispanicMale" onclick="decrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span id="decrementHispanicFemale" onclick="decrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<h3>Male</h3>
+					</div>
+					<div class="col-xs-6">
+						<h3>Female</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section text-center">
+			<h2>Black</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<span id="incrementBlackMale" onclick="incrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span id="incrementBlackFemale" onclick="incrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<span class="fa-stack fa-3x">
+							<i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+							<strong class="fa-stack-1x icon-text"><span id="quantityBlackMale">0</span></strong>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span class="fa-stack fa-3x">
+							<i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+							<strong class="fa-stack-1x icon-text"><span id="quantityBlackFemale">0</span></strong>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<span id="decrementBlackMale" onclick="decrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span id="decrementBlackFemale" onclick="decrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<h3>Male</h3>
+					</div>
+					<div class="col-xs-6">
+						<h3>Female</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section text-center">
+			<h2>Other</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<span id="incrementOtherMale" onclick="incrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span id="incrementOtherFemale" onclick="incrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<span class="fa-stack fa-3x">
+							<i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+							<strong class="fa-stack-1x icon-text"><span id="quantityOtherMale">0</span></strong>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span class="fa-stack fa-3x">
+							<i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+							<strong class="fa-stack-1x icon-text"><span id="quantityOtherFemale">0</span></strong>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<span id="decrementOtherMale" onclick="decrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="col-xs-6">
+						<span id="decrementOtherFemale" onclick="decrementClicked(this.id);">
+							<i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<h3>Male</h3>
+					</div>
+					<div class="col-xs-6">
+						<h3>Female</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6" id="demographics">
+						<h2 id="demographicTitle"></h2>
+						<h3>Demographic Breakdown</h3>
+						<ul>
+							<li><span id="total">0</span> attendees</li>
+							<li><span id="breakdownCaucasianMale">0</span> caucasian men</li>
+							<li><span id="breakdownCaucasianFemale">0</span> caucasian females</li>
+							<li><span id="breakdownHispanicMale">0</span> hispanic men</li>
+							<li><span id="breakdownHispanicFemale">0</span> hispanic females</li>
+							<li><span id="breakdownBlackMale">0</span> black men</li>
+							<li><span id="breakdownBlackFemale">0</span> black females</li>
+							<li><span id="breakdownOtherMale">0</span> men of other races</li>
+							<li><span id="breakdownOtherFemale">0</span> females of other races</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<canvas id="myChart" width="100%" height="100%"></canvas>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<span onclick="share(this.id)" id="emailResults">
+							<i class="fa fa-envelope fa-4x" aria-hidden="true"></i><br />
+							<h4>Email results</h4>
+						</span>
+					</div>
+					<!--<div class="col-xs-6 text-center">
+						<span onclick="share(this.id)" id="copyResults">
+							<i class="fa fa-files-o fa-4x" aria-hidden="true"></i>
+							<h4>Copy to Clipboard</h4>
+						</span>
+					</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+#fp-nav ul li a span{
+	background-color: #FFFFFF;
+}
+
+.fp-slidesNav ul li a span{
+	color: #FFFFFF;
+}
